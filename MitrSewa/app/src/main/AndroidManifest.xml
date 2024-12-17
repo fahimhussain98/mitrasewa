@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wts.com.mitrsewa">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> <!-- for api level grater than 30 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GalaxyMoneyNew"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".activities.NewAddSenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EKYCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Electricity_wts"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ShareCmsReportActivity"
+            android:exported="false" />
+        <activity android:name=".activities.CmsReportActivity" />
+        <activity
+            android:name=".activities.FingpayCmsActivity"
+            android:exported="false" />
+        <activity android:name=".activities.TwoFactorAuthenticationActivity" />
+        <activity
+            android:name=".activities.PendingDmtReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.WalletToWalletReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.WalletToWalletActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ExpressDmtReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ShareExpressDmtActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.UpiReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ComplaintReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.WithdrawCommissionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DmtRefundReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.UpiQrCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.GenerateMpinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.WalletActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BbpsReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DmtReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ShareDmtReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.NewMoneyTransferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SenderValidationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ElectricityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fingpayKyc.FingPayUserBioMetricActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fingpayKyc.FingpayUserOnBoard"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AepsTransactionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MiniStatementPaySprintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.FingPayAepsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MatmReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MatmReceiptActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.FingPayMicroAtmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ViewCustomerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.FundTransferActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CreditDebitReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MyWebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CertificateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CreditDebitBalanceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddBankDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PlansActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DthPlansActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MplanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddSenderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ChangeMpinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MPINActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.OtpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SharePayoutReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ShareAepsReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ReportsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MyCommissionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SettlementReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.LedgerReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AepsReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MoreServicesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SettlementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ShareReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AllReportsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RechargeStatusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RechargeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.HomeDashBoardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="wts.com.mitrsewa.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

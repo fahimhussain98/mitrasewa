@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpiQrCodeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/home_tool_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:lineSpacingExtra="14dp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/codec_pro_bold"
+            android:gravity="center"
+            android:text="Add Fund\nOnline"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bar_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:hint="Name"
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_back"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:hint="Mobile No."
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_back"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/et_upi_id"
+            android:singleLine="true"
+            android:hint="UPI ID"
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_back"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:maxLength="6"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="Amount"
+            android:paddingHorizontal="10dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_back"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back3"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
